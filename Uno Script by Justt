@@ -1,0 +1,62 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Made by Uno", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local TabSection = Tab:NewSection("Manual")
+
+TabSection:NewToggle("ManualSpam", "Done!", function(state)
+  if state then
+        _G.loop = true
+    while _G.loop == true do wait()
+      local args = {
+    [1] = 0.5,
+    [2] = CFrame.new(-418.4356994628906, 22.942182540893555, -45.25699234008789, -0.2221112996339798, 0.5130860805511475, -0.8291014432907104, 4.823365262751622e-09, 0.8503419160842896, 0.5262305736541748, 0.9750213623046875, 0.11688175052404404, -0.18887051939964294),
+    [3] = {
+        ["1015790856"] = Vector3.new(1402.3253173828125, -546.963623046875, 57.040740966796875),
+        ["5000923124"] = Vector3.new(403.5335998535156, -4.725679397583008, 237.2453155517578),
+        ["5115736854"] = Vector3.new(277.57269287109375, -4.676368713378906, 234.26947021484375),
+        ["1321217964"] = Vector3.new(360.7362365722656, 9.095100402832031, 100.95547485351562),
+        ["4948020716"] = Vector3.new(440.7139892578125, -2.2853317260742188, 190.71974182128906),
+        ["3018184996"] = Vector3.new(79.42721557617188, 8.051055908203125, 105.511474609375),
+        ["5060204661"] = Vector3.new(138.3725128173828, 0.8876495361328125, 142.48121643066406),
+        ["1869730509"] = Vector3.new(371.9048767089844, -1.1904296875, 175.77528381347656),
+        ["3139112776"] = Vector3.new(237.62330627441406, -19.400999069213867, 139.8468780517578),
+        ["2672928414"] = Vector3.new(391.9998779296875, 168.67298889160156, 13.289306640625),
+        ["3377745666"] = Vector3.new(202.09686279296875, 11.107173919677734, 93.2000732421875),
+        ["1859546717"] = Vector3.new(-232.54556274414062, 21.44415283203125, 66.7615966796875),
+        ["2652061321"] = Vector3.new(-35.635440826416016, 12.467761993408203, 88.59771728515625)
+    },
+    [4] = {
+        [1] = 269,
+        [2] = 218
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+ wait(.000000000000000001)
+end
+    else
+  end
+        _G.loop = false
+    while _G.loop == true do wait()
+      print("No")
+    end
+    end)
+
+TabSection:NewToggle("AutoParry", "Done!", function(state)
+  if state then
+        _G.loop = true
+    while _G.loop == true do wait()
+      getgenv().ScriptConfig = {
+    DistanceBeforeParry = 30,
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sussy-Tech/Scripts/main/BladeBall.lua"))()
+    end
+  else
+  end
+        _G.loop = false
+    while _G.loop == true do wait()
+      print("No")
+    end
+    end)
